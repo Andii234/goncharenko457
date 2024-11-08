@@ -1,0 +1,55 @@
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    min-height: 80vh;
+}
+
+.sidebar {
+    background-color: #00FFFF;
+    padding: 20px;
+    width: 20%;
+}
+
+.main-content {
+    background-color: #f0f0f0;
+    padding: 20px;
+    width: 80%;
+}
+
+.footer {
+    background-color: #c0c0c0;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Адаптація для мобільних пристроїв */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+}
